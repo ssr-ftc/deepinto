@@ -128,7 +128,7 @@ public class redFar extends LinearOpMode {
                 .strafeTo(new Vector2d(13,-33))
                 .UNSTABLE_addTemporalMarkerOffset(0, () -> {
                     rightClamp();
-                    sleep(500);
+                    sleep(1000);
                     hold_claw_pos(1400, 0.5);
                 })
                 .waitSeconds(0.5)
@@ -151,7 +151,7 @@ public class redFar extends LinearOpMode {
                 })
                 .waitSeconds(0.1)
 
-                .lineToLinearHeading(new Pose2d(10,-33))
+                .lineToLinearHeading(new Pose2d(5,-40))
 
 
 //

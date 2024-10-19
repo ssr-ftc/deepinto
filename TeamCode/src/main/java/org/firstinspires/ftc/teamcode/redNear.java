@@ -145,6 +145,12 @@ public class redNear extends LinearOpMode {
                 })
                 .waitSeconds(1.0)
 
+                .lineToLinearHeading(new Pose2d(14,36.5,2.36))
+                .UNSTABLE_addTemporalMarkerOffset(0, () -> {
+                    slide(1600,-0.5);
+                    sleep(100);
+                })
+
 
                 .build();
 
